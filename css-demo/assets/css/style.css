@@ -2,7 +2,7 @@
 
 
 body{
-    background-color:rgb(48, 116, 158);
+    background-color:rgb(181, 226, 241);
 }
   body{
   }
@@ -18,10 +18,68 @@ body{
 /* ---------------- Global Styles--------------*/
 body{
     font-family: "Playfair Display", serif; 
+    margin:0;
 }
 
 
 header.primary{
-background:rgb(255, 0, 72);
+background:rgba(10, 125, 218, 0.753);
+color:#fff;
+text-align:center;
+text-shadow:2px 2px #000;
+padding:40px;
+padding:20px 40px 20px 40px;
+padding:20px 40px;
 }
+h1.primary h1{
+  font-size:2.4rem;
+  margin:20px 0 0;
+
+}
+
+header.primary h1
+ a{
+  color:#fff;
+  text-decoration:none;
   
+
+ }
+
+ header .primary h2{
+  margin:0;
+  font-size:1.4rem;
+ }
+
+ header.primary nav{
+max-width:900px;
+margin: 20px auto;
+ }
+
+
+ header.primary ul{
+  padding:10px 0;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+
+
+
+ header.primary ul li{
+  list-style-type:none; disc;
+ }
+
+ header.primary nav a{
+  color:#fff;
+  text-decoration: none;
+  background-color:black;
+  background-color:rgba(0,0,0,4);
+  padding:5px 10px;
+  border-radius: 20px 50px;
+  border: 1px solid #fff;
+  transition:5.4s;
+ }
+
+ header.primary nav a:hover{
+  background-color:rgba(101, 96, 96, 0.456);
+ }
