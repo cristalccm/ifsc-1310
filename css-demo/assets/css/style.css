@@ -30,6 +30,30 @@ body{
   margin: 40px auto;
 }
 
+.img-right{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  border-radius:50px;
+  background-color:blue;
+}
+.img-left{
+  float:left;
+  margin: 20px 10px 10px 0;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  border-radius:50px;
+  background-color:blue;
+}
+.img-center{
+display:block;
+margin:20px auto;
+border:1px solid #c0c0c023;
+padding:5px;
+border-radius:50px;
+background-color:blue;
+}
 
 /* ---------------- Global: Styles--------------*/
 body{
@@ -140,6 +164,10 @@ color:rgba(10, 125, 218, 0.753);
   flex-direction:row;
   justify-content:space-around;
   gap:2rem;
+  border-bottom:1px dotted black;
+  padding-bottom:2rem 0;
+  border-top:1px dotted black;
+
   
 
 }
@@ -176,7 +204,74 @@ color:rgba(10, 125, 218, 0.753);
 #blog .post:hover{
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.782);
 }
-  
+
+#practice h2{
+  color:rgba(10, 125, 218, 0.753);
+ border-bottom:1px solid #000000;
+}
+
+table{
+  border: 1px solid #c0c0c0;
+  width: 100%;
+  margin: 20px 0;
+  border-collapse:collapse;
+}
+
+caption{
+  font-weight:bold;
+  margin:10px;
+}
+
+th{
+  background-color:rgba(10, 125, 218, 0.753) ;
+  color:#fff;
+  padding:7.5px;
+}
+
+tr:nth-child(even){
+  background-color:rgba(10, 125, 218, 0.753) ;
+}
+
+td{
+border:1px solid #c0c0c0;
+padding:5px;
+}
+
+
+
+aside[role="complementary"]{
+
+background-color:rgba(10, 125, 218, 0.753) ;
+color:#fff;
+padding:1.6rem;
+
+}
+  aside .container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:60px;
+  }
+
+  aside .container a:last-of-type{
+    display:block;
+    color:#fff;
+    text-align:right;
+    margin-top:1rem;
+  }
+
+  aside .widget footer{
+    display:none;
+  }
+
+  #colophon{
+    background-color:rgba(10, 125, 218, 0.753);
+    text-align:center;
+    padding:10px;
+    color:#fff;
+    font-size:1.1;
+  }
+
 
 
 
