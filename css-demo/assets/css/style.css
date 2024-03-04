@@ -59,11 +59,15 @@ background-color:blue;
 body{
     font-family: "Playfair Display", serif; 
     margin:0;
+    line-height:1.5;
+    background: no-repeat center/50% url(../img/images5.jpg);
+
 }
 
 
 header.primary{
-background:rgba(10, 125, 218, 0.753);
+  background-color:rgba(10, 125, 218, 0.753);
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%23242fe6' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 color:#fff;
 text-align:center;
 text-shadow:2px 2px #000;
@@ -149,12 +153,6 @@ color:rgba(10, 125, 218, 0.753);
     max-width:250px;
     margin:auto;
 
-
-
-
-
-
-
   }header.primary nav a{
     display:block;
   }
@@ -167,16 +165,20 @@ color:rgba(10, 125, 218, 0.753);
   border-bottom:1px dotted black;
   padding-bottom:2rem 0;
   border-top:1px dotted black;
-
-  
-
+  flex-wrap:wrap;
 }
+  #blog h2 {
+    flex:0 0 100%;
+    margin:0;
+    text-align:center;
+  }
+  
 #blog .post{
   box-shadow: 0 8px 16px rgba(0,0,0,.6);
-  padding: 10px;
-  border-radius:4px;
+  padding: 12px;
+  border-radius:5px;
   font-size:.8rem;
-  transition:.5s;
+  transition:.8s;
 }
 
 #blog figure{
@@ -185,18 +187,19 @@ color:rgba(10, 125, 218, 0.753);
 
 #blog figcaption{
   text-transform:uppercase;
-  font-size:.6rem;
+  font-size:.8rem;
   text-align:center;
   color:#c0c0c0;
 }
 
 #blog header{
   padding-top:10px;
-  font-size:.6rem;
+  font-size:.8rem;
 }
 
 #blog header h2{
   margin:0;
+ 
 }
 #blog a{
   color: rgba(10, 125, 218, 0.753);
@@ -207,57 +210,105 @@ color:rgba(10, 125, 218, 0.753);
 
 #practice h2{
   color:rgba(10, 125, 218, 0.753);
- border-bottom:1px solid #000000;
+ border-bottom:1.5px solid #000000;
 }
 
 table{
-  border: 1px solid #c0c0c0;
+  border: 1.5px solid #c0c0c0;
   width: 100%;
-  margin: 20px 0;
+  margin: 22px 0;
   border-collapse:collapse;
 }
 
 caption{
   font-weight:bold;
-  margin:10px;
+  margin:12px;
 }
 
 th{
-  background-color:rgba(10, 125, 218, 0.753) ;
+  background-color:rgba(10, 124, 218, 0.995) ;
   color:#fff;
-  padding:7.5px;
+  padding:8px;
 }
 
 tr:nth-child(even){
-  background-color:rgba(10, 125, 218, 0.753) ;
+  background-color:rgb(77, 149, 207) ;
 }
 
+
+tr:hover{
+  background-color:rgba(10, 124, 218, 0.641);
+}
+td:nth-child(2), td:nth-child(3){
+  
+}
+td:nth-child(n+2){
+  text-align:right;
+}
+  
 td{
-border:1px solid #c0c0c0;
-padding:5px;
+border:1.5px solid #c0c0c0;
+padding:8px;
 }
 
+#practice ol{
+  list-style-type:lower-decimal;
+  list-style-position:outside;
+}
 
+#practice ul ul{
+  list-style-type:square;
+}
+
+#practice dl dt{
+ font-weight:bold; 
+ }
+dl dd{
+  margin:0;
+  }
+
+dd + dt{
+margin-top:1rem;
+}
+
+#practice blockquote{
+  border:4px double #c0c0c0;
+  padding:20px 40px;
+  margin:40px 80px;
+  border-radius: 30px 0;
+  background-color:rgba(10, 124, 218, 0.995) ;
+  color:#fff;
+  line-height:1.4;
+  text-shadow:1px 1px #000;
+
+}
+
+#practice blockquote cite{
+  display:block;
+  text-align:right;
+  font-size:.7rem;
+  margin-top:1rem;
+}
 
 aside[role="complementary"]{
 
-background-color:rgba(10, 125, 218, 0.753) ;
+background-color:rgba(10, 124, 218, 0.61) ;
 color:#fff;
-padding:1.6rem;
+padding:1.8rem;
 
 }
   aside .container{
     display:flex;
     flex-direction:row;
     justify-content:center;
-    gap:60px;
+    gap:64px;
   }
 
   aside .container a:last-of-type{
     display:block;
     color:#fff;
     text-align:right;
-    margin-top:1rem;
+    margin-top:1.5rem;
   }
 
   aside .widget footer{
@@ -265,11 +316,12 @@ padding:1.6rem;
   }
 
   #colophon{
-    background-color:rgba(10, 125, 218, 0.753);
+    background-color: #9aa0ff;
+background-image: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%23242fe6' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     text-align:center;
-    padding:10px;
+    padding:12px;
     color:#fff;
-    font-size:1.1;
+    font-size:1.4;
   }
 
 
