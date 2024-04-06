@@ -2,7 +2,7 @@
 
 
 body{
-    background-color:#60337e;
+    background-color:#d198f8;
 }
   body{
   }
@@ -36,7 +36,7 @@ body{
   border:1px solid #c0c0c0;
   padding:8px;
   border-radius:55px;
-  background-color:#6C0399;
+  background-color:#d58bf5;
 }
 .img-left{
   float:left;
@@ -66,8 +66,8 @@ body{
 
 
 header.primary{
-  background-color:#6C0399;
-color:#fff;
+  background-color:#611582ac;
+color:#fffffff6;
 text-align:center;
 text-shadow:2px 2px #000;
 padding:40px;
@@ -113,7 +113,7 @@ margin: 20px auto;
  }
 
  header.primary nav a{
-  color:#fff;
+  color:#ffffff;
   text-decoration: none;
   background-color:black;
   background-color:rgba(0,0,0,4);
@@ -129,7 +129,7 @@ margin: 20px auto;
  
  #content h2{
 
-color:#540277;
+color:#980bd5;
  border:1px dotted #c0c0c0;
  }
 
@@ -150,9 +150,9 @@ color:#540277;
     flex-direction: column;
     gap:25px;
     max-width:255px;
-    margin:auto;
-
-  }header.primary nav a{
+    margin:auto;}
+    
+    header.primary nav a{
     display:block;
   }
 }
@@ -188,7 +188,7 @@ color:#540277;
   text-transform:uppercase;
   font-size:.8rem;
   text-align:center;
-  color:#c0c0c0a8;
+  color:#c0c0c002;
 }
 
 #blog header{
@@ -225,7 +225,7 @@ caption{
 }
 
 th{
-  background-color:#A205E6 ;
+  background-color:#b905e6a9 ;
   color:#fff;
   padding:8px;
 }
@@ -291,7 +291,7 @@ margin-top:1rem;
 
 aside[role="complementary"]{
 
-background-color:#A205E6 ;
+background-color:#a305e693 ;
 color:#fff;
 padding:1.8rem;
 
@@ -315,7 +315,7 @@ padding:1.8rem;
   }
 
   #colophon{
-    background-color:#C59CE1;
+    background-color:#bb8bdbcf;
     text-align:center;
     padding:12px;
     color:#fff;
