@@ -1,11 +1,12 @@
 body{
-background-color:
+    background-color:rgb(255, 250, 250);
 }
+
 Body{}
 
 html{
     box-sizing: border-box;
-}
+}    ,
     :before,
     :after{
         box-sizing: inherit;
@@ -21,11 +22,11 @@ html{
  }
     .img-right{
         float:right;
-        margin:10px 0px 10px 20px;
-        border: 1px solid ;
+        margin:10px 0px 10px 100px;
+        border: 1px solid grey ;
         padding:8px;
-        border-radius:55px;
-        background-color: ;
+        border-radius:50px;
+        background-color:rgb(94, 99, 101);
     }
     .img-left{
         float:left;
@@ -33,7 +34,7 @@ html{
         border: 1px solid ;
         padding:5px;
         border-radius:50px;
-        background-color: ;
+        background-color:rgba(128, 128, 128, 0.597) ;
     }
     .img-center{
         display:block;
@@ -41,38 +42,186 @@ html{
         border: 1px solid ;
         padding:5px;
         border-radius:50px;
-        background-color: ;
+        background-color:grey ;
     }
     body{
         font-family:"IBM Plex Sans";
-        margin:0;
-        line-height:1.2;
+        margin:5px;
+        line-height:1;
     }
+
     header.primary{
-     background-color: ; 
-     color: ;  
+     background-image: url(https://media.wired.com/photos/65e8386c854d4014d8ee334e/master/w_1600%2Cc_limit/space_11.jpg) ;
+     color:#fcfcff;
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-position:100% 0;
      text-align: center;
-     text-shadow: ;
+     text-shadow:none ;
      padding:40px;
      padding:30px 50px 30px 50px;
      padding:30px 50px
     }
+    header.primary h1
     h1.primary h1{
-     font-size: ;
+     font-size: 12px;
      margin: 20px 0 0;
+     
+    
     }
-    header.primary h1{
-        color: ;
-        text-decoration: none;
+    header.primary h1 a{
+     color:#e4e5ef;
+     background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/498px-SpaceX-Logo.svg.png);
+     display:block;
+     width: 450px;
+    height: 70px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+
     }
     header.primary h2{
-        margin: 0;
-        font-size:1.6rem ;
+        margin: 2px;
+        font-size:1rem ;
     }
     header.primary nav{
         max-width:900px;
         margin:20px auto;
     }
+    header.primary ul{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header.primary ul li{
+        list-style-type:none; disc;
+    }
+    header.primary nav a{
+        color:rgba(240, 248, 255, 0.933);
+        text-decoration: none;
+        background-color: rgba(56, 195, 237, 0.748);
+        background-color: rgba(0,0,0,4);
+        padding: 6px 12px;
+        border-radius: 30px 60px;
+        border: 1px solid whitesmoke;
+        transition: 5.4s;
+
+}
+header.primary nav a:hover{
+    background-color:darkgrey ;
+}
+#content h2{
+    color:rgb(80, 73, 165);
+}
+#content{
     
+}
+@media screen (max-width:600px) {
+       header.primary ul {
+       flex-direction: column;
+       gap:25px;
+       max-width:255px;
+       margin:auto;}
+    header.primary nav a{
+    display:block;
+}
+
+}
+#blog{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:3rem;
+    border-bottom: 2px dotted black;
+    padding-bottom: 3rem 0;
+    border-top: 2px dotted black;
+    flex-wrap: wrap;
+
+}
+#blog h2 {
+    flex:0 0 100%;
+    margin:0;
+    text-align: center;
+}
+#blog.post{
+    box-shadow: 0 8px 16px rgba(0,0,0,4);
+    padding:14px;
+    border-radius: 6px;
+    font-size: .8rem;
+    transition:.8s;
+    
+}
+#blog figure{
+    margin:0;
+}
+#blog figcaption{
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    color: rgb(38, 34, 92);
+
+}
+#blog header{
+    padding-top: 12px;
+    font-size: .8rem;
+
+}
+#blog header h2{
+    margin:0;
+}
+#blog a{
+    color:darkblue;
+}
+#blog .post:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.486);
+}
+aside[role="complimentary"]{
+    background-color:rgba(84, 127, 201, 0.748);
+    color:#fff;
+    padding:2.5rem
+}
+aside.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:64px;
+}
+aside.container :last-of-type{
+    display:block;
+    color: #fff;
+    text-align: right;
+    margin-top:1.5rem;
+
+}
+table{
+    border:1.5px solid grey;
+    width:50%;
+    margin:22px 0;
+    border-collapse:collapse;
+    
+}
+caption{
+    font-weight:bold;
+    margin:12px;
+}
+th{
+    color:#081050;
+    padding:8px;
+}
+td{
+border:1.5px solid rgba(0,0,0,0.486);
+padding:4px;
+}
+#colophon{
+    background-color:rgba(59, 92, 148, 0.748);
+    text-align: center;
+    padding:12px;
+    color:#fff;
+    font-size: 1.4;
+
+}
 
 
